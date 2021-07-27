@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #bce28d;
+  --secondary-color: #408a7b;
+  --mediator-color: #7ca34c;
+  --contrast-color: #f0c610;
+  --dark-gray: #6b7280;
+  --off-white: #f3f4f6;
+}
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu Mono', monospace;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+#app {
+    margin: auto;
+    width: 60vw;
+    text-align: center;
+}
+
+#banner {
+    height: 92vh;
+}
+
+#heading {
+    color: #00494d;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: 5em;
+}
+
+#hero-img {
+    max-height: 60vh;
+    max-width: 60vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+}
+
+#main-link {
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: #00494d;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    line-height: 5vh;
+    cursor: pointer;
+}
+
+.input-style {
+    width: 40%;
+    padding: 0.3125rem 0.75rem;
+    background-color: #d3f0f0;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: monospace;
+    color: #00494d;
+    text-align: end;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgb(218, 218, 218);
+}
+
+.box-pad {
+    padding-left: 1.5rem;
+}
+
+.center-count {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3rem;
+}
+
+.note-img {
+    width: 20vh;
+}
+
+
+.cash-count {
+    font-size: 5rem;
+}
+
+.button {
+    background-color: #00494d;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    font-family: inherit;
+    padding: 1rem;
+    font-size: 1.5rem;
+    /* font-weight: 600; */
+    width: 50%;
+    align-self: center;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgb(139, 139, 139);
+}
+
+.info-form-style {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.1rem;
+    /* padding: 0.3125rem 0.75rem; */
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #f4fafa;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px rgb(92, 92, 92);
+}
+
+.hidden {
+    display: none;
+}
+
+.overview {
+    width: 100%;
+    /* margin-top: 2rem; */
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #f4fafa;
+    border: 2px transparent;
+    border-radius: 5px; 
+    outline: none;
+    text-align: center;
+}
+
+.overview-pad {
+    margin-top: 0rem;
+    margin-bottom: 0;
+}
+
+.note-pad {
+    padding-top: 1rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}

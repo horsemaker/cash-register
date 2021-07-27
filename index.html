@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>पैसा-पैसा</title>
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio id="money-song" src="assets/money.mp3" type="audio/mpeg" autoplay loop muted></audio>
+    <div id="app">
+      <div id="banner">
+        <h1 id="heading">पैसा पैसा</h1>
+        <img id="hero-img" src="assets/hero-img1.svg" alt="" />
+      </div>
+      <a id="main-link" href="http://127.0.0.1:5500/index.html#cash-register"
+        >Cash Register</a
+      >
+      <div id="cash-register">
+        <div id="info-form" class="info-form-style">
+          <p>
+            <label for="bill-amount">Bill Amount: </label>
+            <input type="number" id="bill-amount" class="input-style" placeholder="0" />
+          </p>
+          <button type="submit" class="button" id="show-next">Next</button>
+          <p id="cash-paid-entry" class="hidden">
+            <label for="cash-paid" class="box-pad">Cash Paid: </label>
+            <input type="number" id="cash-paid" class="input-style" placeholder="0" />
+          </p>
+          <button type="submit" class="button hidden" id="give-result">Check</button>
+        </div>
+        <div id="details" class="overview overview-pad">
+          <p id="bill-amount-details" class="overview-pad"></p>
+          <p id="cash-paid-details" class="overview-pad"></p>
+          <p id="return-cash" class="overview-pad"></p>
+        </div>
+        <!-- <p id="return-cash"></p> -->
+        <div id="result" class="hidden">
+          <p class="center-count note-pad">
+            <img class="note-img" src="assets/2000.png" alt="₹2000 " />
+            X
+            <span class="cash-count" id="result-2000" style="color: #00494d">0</span>
+          </p>
+          <p class="center-count">
+            <img class="note-img" src="assets/500.png" alt="₹500" />
+            X
+            <span class="cash-count" id="result-500" style="color: #00494d">0</span>
+          </p>
+          <p class="center-count">
+            <img class="note-img" src="assets/100.png" alt="₹100" />
+            X
+            <span class="cash-count" id="result-100" style="color: #00494d">0</span>
+          </p>
+          <p class="center-count">
+            <img class="note-img" src="assets/20.png" alt="₹10" />
+            X
+            <span class="cash-count" id="result-20" style="color: #00494d">0</span>
+          </p>
+          <p class="center-count">
+            <img class="note-img" src="assets/10.png" alt="₹10" />
+            X
+            <span class="cash-count" id="result-10" style="color: #00494d">0</span>
+          </p>
+          <p class="center-count">
+            <img class="note-img" src="assets/5.png" alt="₹5" />
+            X
+            <span class="cash-count" id="result-5" style="color: #00494d">0</span>
+          </p>
+          <p class="center-count">
+            <img class="note-img" src="assets/1.png" alt="₹1" />
+            X
+            <span class="cash-count" id="result-1" style="color: #00494d">0</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
