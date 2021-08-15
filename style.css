@@ -170,6 +170,10 @@ i {
   margin-left: 0.6vw;
 }
 
+.footer {
+    margin-bottom: 2vh;
+}
+
 .github-repo {
   /* border: 1px solid white; */
   text-align: center;
